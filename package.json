@@ -6,19 +6,21 @@
     "start": "electron .",
     "build": "electron-builder"
   },
-  "build": {
-    "appId": "net.rainz.weather",
-    "productName": "Rainz Weather",
-    "directories": {
-      "output": "dist"
-    },
-    "mac": {
-      "target": "dmg"
-    },
-    "win": {
-      "target": "nsis"
-    }
+    "build": {
+  "appId": "net.rainz.weather",
+  "productName": "Rainz Weather",
+  "directories": {
+    "output": "dist"
   },
+  "mac": {
+    "icon": "assets/icon.icns",
+    "target": "dmg"
+  },
+  "win": {
+    "icon": "assets/icon.ico",
+    "target": "nsis"
+  }
+},
   "devDependencies": {
     "electron": "^29.0.0",
     "electron-builder": "^24.0.0"
