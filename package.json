@@ -9,6 +9,7 @@
     "build": {
   "appId": "net.rainz.weather",
   "productName": "Rainz Weather",
+  "publish": null,
   "directories": {
     "output": "dist"
   },
