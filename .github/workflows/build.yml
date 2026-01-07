@@ -47,11 +47,12 @@ jobs:
       - name: Build Windows
         run: npm run build
 
-      - name: Upload Windows artifact
+           - name: Upload Windows artifact
         uses: actions/upload-artifact@v4
         with:
           name: rainz-windows
-          path: dist/win
+          path: dist/*.exe
+
 
   # Optional: Publish to GitHub Releases automatically
   # Uncomment if you have GH_TOKEN in repo secrets
